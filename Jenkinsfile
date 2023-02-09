@@ -5,7 +5,7 @@ pipeline {
     stage("to check ") {
       steps {
         script {
-          sh 'sudo echo "script run at $(date +%d-%m-%y-%T)">>/home/centos/jenkins_build_history' 
+          sh 'echo "script run at $(date +%d-%m-%y-%T)" | sudo tee -a /home/centos/jenkins_build_history' 
         }//script
       }//steps
     } //stage("to check")
