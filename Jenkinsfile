@@ -13,7 +13,7 @@ pipeline {
     stage("to build") {
       steps {
         script {
-          sh 'mvn build'
+          sh 'mvn package'
         } //script
       } //steps
     } //stage("to build")
