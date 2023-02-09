@@ -34,7 +34,7 @@ pipeline {
           nexusVersion: 'nexus3', 
           protocol: 'http', 
           repository: 'my-project', 
-          version: '1.0-SNAPSHOT'
+          version: '1.0'
       } //steps
     } // stage("upload artefactory to nexus")
   }// stages
